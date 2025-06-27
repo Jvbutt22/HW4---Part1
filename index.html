@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dynamic Multiplication Table - jQuery Validation</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- jQuery and Validation Plugin -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+</head>
+<body>
+    <h1>Dynamic Multiplication Table</h1>
+
+    <form id="multiplicationForm">
+        <label>Start Multiplier (Horizontal): <input type="number" id="startX" name="startX" required /></label>
+        <label>End Multiplier (Horizontal): <input type="number" id="endX" name="endX" required /></label>
+        <label>Start Multiplicand (Vertical): <input type="number" id="startY" name="startY" required /></label>
+        <label>End Multiplicand (Vertical): <input type="number" id="endY" name="endY" required /></label>
+        <button type="submit">Generate Table</button>
+    </form>
+
+    <div id="errorMessage"></div>
+    <div id="tableContainer" class="table-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
